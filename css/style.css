@@ -1,3 +1,23 @@
 #logo_cars {
     height: 60px;
 }
+
+#about_car {
+    width: 80%;
+}
+
+#about_title {
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.section-pilares {
+    background-color: #f5f5ee;
+    text-align: center;
+}
+
+.card-image {
+    font-size: 100px;
+    color: red;
+    margin: 10px 0 20px 0;
+}
