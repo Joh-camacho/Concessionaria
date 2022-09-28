@@ -16,6 +16,10 @@
     text-align: center;
 }
 
+.section-ofertas {
+    background-color: #f5f5ee;
+}
+
 .card-image {
     font-size: 100px;
     color: #444;
