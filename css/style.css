@@ -6,7 +6,7 @@
     width: 80%;
 }
 
-#about_title {
+.about_title {
     text-align: center;
     margin: 20px 0 20px 0;
 }
@@ -18,6 +18,11 @@
 
 .card-image {
     font-size: 100px;
-    color: red;
+    color: #444;
     margin: 10px 0 20px 0;
+    transition: .5s;
+}
+
+.card-image:hover {
+    color: red;
 }
