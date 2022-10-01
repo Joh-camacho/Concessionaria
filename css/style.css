@@ -6,17 +6,7 @@
     width: 80%;
 }
 
-.about_title {
-    text-align: center;
-    margin: 20px 0 20px 0;
-}
-
-.section-pilares {
-    background-color: #f5f5ee;
-    text-align: center;
-}
-
-.section-ofertas {
+.bg-gray-lighter {
     background-color: #f5f5ee;
 }
 
