@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária Relâmpago Marquinhos</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+
+                <!--Site Logo-->
+                <div class="logo-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/cars_logo.png" alt="Relâmpago Marquinhos" id="logo_cars"> Relâmpago Marquinhos
+                    </a>
+                </div>
+                <!--END Site Logo-->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Navigation Site-->
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+
+                        <a class="nav-link" href="index.html" aria-label="Home">Home</a>
+                        <a class="nav-link" href="offers.html" aria-label="Ofertas">Ofertas</a>
+                        <a class="nav-link active" href="#" aria-current="page" aria-label="Peças e acessórios">Peças e
+                            acessórios</a>
+                        <div class="dropdown">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false" aria-label="Serviços Dropdown">
+                                    Serviços
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" aria-label="Agendamento online">Agendamento
+                                            online</a></li>
+                                    <li><a class="dropdown-item" href="#" aria-label="Verificar serviços">Verificar
+                                            serviços</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                        <a class="nav-link" href="contacts.html" aria-label="Contatos">Contatos</a>
+
+                    </div>
+                </div>
+                <!--END Navigation Site-->
+
+            </div>
+        </nav>
+    </header>
+    <!--END Header-->
+
+    <!--Main-->
+    <main>
+
+        <div class="container">
+            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pneus-tab" data-bs-toggle="tab" 
+                        data-bs-target="#pneus-tab-pane" type="button" role="tab" 
+                        aria-controls="pneus-tab-pane" aria-selected="true">Pneus</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="correias-tab" data-bs-toggle="tab"
+                        data-bs-target="#correias-tab-pane" type="button" role="tab"
+                        aria-controls="correias-tab-pane" aria-selected="false">Correias</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="aditivos-tab" data-bs-toggle="tab"
+                        data-bs-target="#aditivos-tab-pane" type="button" role="tab"
+                        aria-controls="aditivos-tab-pane" aria-selected="false">Aditivos</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="myTabContent">
+
+            <!--Pneus-->
+            <div class="tab-pane fade show active" id="pneus-tab-pane" role="tabpanel" aria-labelledby="pneus-tab" tabindex="0">
+                <section class="section-pneus bg-gray-lighter">
+                    <div class="container">
+                        <div class="row text-center">
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Pirelli </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            Pneu Pirelli Aro 16 Cinturato 205/55R16
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://static.pneustore.com.br/medias/sys_master/images/images/hb4/hb1/9026831515678/pneu-pirelli-aro-16-cinturato-all-season-plus-205-55r16-91v-1.jpg"
+                                            alt="Pneu Pirelli Aro 16 Cinturato 205/55R16"
+                                            title="Pneu Pirelli Aro 16 Cinturato 205/55R16">
+
+                                        <h4 class="my-3 text-uppercase">Cinturato 205/55R16</h4>
+
+                                        <p class="text-muted my-0">De: R$ 600,00</p>
+                                        <p> R$ 500,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Goodyear </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            Pneu Goodyear Aro 16 Grip 205/55R16
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://static.pneustore.com.br/medias/sys_master/images/images/h73/hd3/8859670315038/pneu-goodyear-aro-16-efficientgrip-performance-205-55r16-91v-original-golf-1.jpg"
+                                            alt="Pneu Goodyear Aro 16 Grip 205/55R16"
+                                            title="Pneu Goodyear Aro 16 Grip 205/55R16">
+
+                                        <h4 class="my-3 text-uppercase">Grip 205/55R16</h4>
+
+                                        <p class="text-muted my-0">De: R$ 550,00</p>
+                                        <p> R$ 520,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Michelin </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            Pneu Michelin Aro 16 Primacy 4 205/55R16
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://static.pneustore.com.br/medias/sys_master/images/images/hbc/he4/8859617624094/pneu-michelin-aro-16-primacy-4-205-55r16-94v-xl-original-chery-arizzo-5-e-tiggo-2-1.jpg"
+                                            alt="Pneu Michelin Aro 16 Primacy 4 205/55R16"
+                                            title="Pneu Michelin Aro 16 Primacy 4 205/55R16">
+
+                                        <h4 class="my-3 text-uppercase">Primacy 4 205/55R16</h4>
+
+                                        <p class="text-muted my-0">De: R$ 550,00</p>
+                                        <p> R$ 500,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Bridgestone </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            Pneu Bridgestone Aro 16 Ecopia 205/55R16
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://static.pneustore.com.br/medias/sys_master/images/images/h81/h20/9167246852126/pneu-bridgestone-aro-16-ecopia-ep150-205-55r16-91v-1.jpg"
+                                            alt="Pneu Bridgestone Aro 16 Ecopia 205/55R16"
+                                            title="Pneu Bridgestone Aro 16 Ecopia 205/55R16">
+
+                                        <h4 class="my-3 text-uppercase">Ecopia 205/55R16</h4>
+
+                                        <p class="text-muted my-0">De: R$ 450,00</p>
+                                        <p> R$ 400,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Firestone </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            Pneu Firestone Aro 16 F-600 205/55R16
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://static.pneustore.com.br/medias/sys_master/images/images/h71/h3f/8859577253918/pneu-firestone-aro-16-f-600-205-55r16-91v-1.jpg"
+                                            alt="Pneu Firestone Aro 16 F-600 205/55R16"
+                                            title="Pneu Firestone Aro 16 F-600 205/55R16">
+
+                                        <h4 class="my-3 text-uppercase">F-600 205/55R16</h4>
+
+                                        <p class="text-muted my-0">De: R$ 400,00</p>
+                                        <p> R$ 350,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--END Pneus-->
+
+            <!--Correias-->
+            <div class="tab-pane fade" id="correias-tab-pane" role="tabpanel" aria-labelledby="correias-tab" tabindex="0">
+                <section class="section-correias bg-gray-lighter">
+                    <div class="container">
+                        <div class="row text-center">
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Tensor </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            Tensor da Correia Dentada
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://pecas.sagafiat.com.br/img/imagens_produto/20210630_141704_1____1_120.JPG1_120.JPG"
+                                            alt="Tensor da Correia Dentada"
+                                            title="Tensor da Correia Dentada">
+
+                                        <h4 class="my-3 text-uppercase">Tensor da Correia</h4>
+
+                                        <p class="text-muted my-0">De: R$ 200,00</p>
+                                        <p> R$ 150,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Correia </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            Correia Direção Hidráulica
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://pecas.sagafiat.com.br/img/imagens_produto/20210619_091500_1____1_120.JPG1_120.JPG"
+                                            alt="Correia Poly V Direção Hidráulica"
+                                            title="Correia Poly V Direção Hidráulica">
+
+                                        <h4 class="my-3 text-uppercase">Correia Poly V</h4>
+
+                                        <p class="text-muted my-0">De: R$ 550,00</p>
+                                        <p> R$ 520,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Correia </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            Correia do Alternador
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://pecas.sagafiat.com.br/img/imagens_produto/20210619_092550_1____1_120.JPG1_120.JPG"
+                                            alt="Correia do Alternador Sem Ar"
+                                            title="Correia do Alternador Sem Ar">
+
+                                        <h4 class="my-3 text-uppercase">Correia Sem Ar</h4>
+
+                                        <p class="text-muted my-0">De: R$ 90,00</p>
+                                        <p> R$ 50,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Correia </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            Correia Dentada Multijet
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://pecas.sagafiat.com.br/img/imagens_produto/20210619_091500_1____1_120.JPG1_120.JPG"
+                                            alt="Correia Dentada Multijet"
+                                            title="Correia Dentada Multijet">
+
+                                        <h4 class="my-3 text-uppercase">Correia Multijet</h4>
+
+                                        <p class="text-muted my-0">De: R$ 150,00</p>
+                                        <p> R$ 125,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Kit </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            Kit Correia Dentada
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://pecas.sagafiat.com.br/img/imagens_produto/7089066_120.JPG"
+                                            alt="Kit Correia Dentada"
+                                            title="Kit Correia Dentada">
+
+                                        <h4 class="my-3 text-uppercase">Kit Correia Dentada</h4>
+
+                                        <p class="text-muted my-0">De: R$ 250,00</p>
+                                        <p> R$ 200,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--END Correias-->
+
+            <!--Aditivos-->
+            <div class="tab-pane fade" id="aditivos-tab-pane" role="tabpanel" aria-labelledby="aditivos-tab" tabindex="0">
+                <section class="section-aditivos bg-gray-lighter">
+                    <div class="container">
+                        <div class="row text-center">
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Motor </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            EVORA 0W-20 – API SN
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://server.wfloat.com.br/~evoralubcom/wp-content/uploads/2020/10/SKU-EVORA-SYNTHETIC-SAE-0W20-API-SN-500x500.png"
+                                            alt="EVORA 0W-20 – API SN"
+                                            title="EVORA 0W-20 – API SN">
+
+                                        <h4 class="my-3 text-uppercase"> 0W-20 – API SN </h4>
+
+                                        <p class="text-muted my-0">De: R$ 100,00</p>
+                                        <p> R$ 80,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Motor </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            EVORA 502 – SAE 5W-40
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://server.wfloat.com.br/~evoralubcom/wp-content/uploads/2020/10/SKU-EVORA-SYNTHETIC-502-SAE-5W40-API-SN-500x500.png"
+                                            alt="EVORA 502 – SAE 5W-40"
+                                            title="EVORA 502 – SAE 5W-40">
+
+                                        <h4 class="my-3 text-uppercase">502 – SAE 5W-40</h4>
+
+                                        <p class="text-muted my-0">De: R$ 150,00</p>
+                                        <p> R$ 100,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Transmissão </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            EVORA AT FLUID VI
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://server.wfloat.com.br/~evoralubcom/wp-content/uploads/2021/12/SKU-EVORA-AT-FLUID-VI-DEXRON-VI-500x500.png"
+                                            alt="EVORA AT FLUID VI"
+                                            title="EVORA AT FLUID VI">
+
+                                        <h4 class="my-3 text-uppercase">FLUID VI</h4>
+
+                                        <p class="text-muted my-0">De: R$ 90,00</p>
+                                        <p> R$ 50,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Transmissão </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            EVORA FULL CVT
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://server.wfloat.com.br/~evoralubcom/wp-content/uploads/2020/10/SKU-EVORA-FULL-CVT-500x500.png"
+                                            alt="EVORA FULL CVT"
+                                            title="EVORA FULL CVT">
+
+                                        <h4 class="my-3 text-uppercase">FULL CVT</h4>
+
+                                        <p class="text-muted my-0">De: R$ 150,00</p>
+                                        <p> R$ 125,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-4 col-xl-3 px-2 my-3">
+                                <div class="card h-100">
+                                    <div class="card-body p-1">
+                                        <h3 class="card-title py-2 text-uppercase"> Transmissão </h3>
+                                        <h6 class="card-subtitle text-muted text-uppercase fw-normal">
+                                            EVORA AT FLUID III
+                                        </h6>
+
+                                        <img class="card-img-top w-75"
+                                            src="https://server.wfloat.com.br/~evoralubcom/wp-content/uploads/2020/11/SKU-EVORA-AT-FLUID-III-DEXRON-IIII-500x500.png"
+                                            alt="EVORA AT FLUID III"
+                                            title="EVORA AT FLUID III">
+
+                                        <h4 class="my-3 text-uppercase">FLUID III</h4>
+
+                                        <p class="text-muted my-0">De: R$ 250,00</p>
+                                        <p> R$ 200,00 </p>
+
+                                        <a href="#"
+                                            class="btn btn-outline-danger d-flex justify-content-center fw-bold mt-4 mb-2 mx-2 p-2"
+                                            role="button">
+                                            Quero agora!
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--END Aditivos-->
+
+        </div>
+
+    </main>
+    <!--END Main-->
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
