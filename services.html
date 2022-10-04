@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concessionária Relâmpago Marquinhos</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+
+                <!--Site Logo-->
+                <div class="logo-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/cars_logo.png" alt="Relâmpago Marquinhos" id="logo_cars"> Relâmpago Marquinhos
+                    </a>
+                </div>
+                <!--END Site Logo-->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Navigation Site-->
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+
+                        <a class="nav-link" href="index.html" aria-label="Home">Home</a>
+                        <a class="nav-link" href="offers.html" aria-label="Ofertas">Ofertas</a>
+                        <a class="nav-link" href="parts.html" aria-label="Peças e acessórios">Peças e acessórios</a>
+                        <a class="nav-link active" href="#" aria-current="page" aria-label="Serviços">Serviços</a>
+                        <a class="nav-link" href="contacts.html" aria-label="Contatos">Contatos</a>
+
+                    </div>
+                </div>
+                <!--END Navigation Site-->
+
+            </div>
+        </nav>
+    </header>
+    <!--END Header-->
+
+    <!--Main-->
+    <main>
+
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 my-3">
+                    <h2> Agende seus serviços </h2>
+
+                    <p class="mb-0"> Solicite o agendamento de qualquer serviço para o seu carro. </p>
+                </div>
+            </div>
+
+            <form>
+                <div class="row my-2">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-lg-8">
+                            <h5> 1) Selecione seu carro </h5>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-md-12 col-lg-8">
+                            <label for="inputModelCar" class="form-label">Modelo</label>
+                            <select class="form-select" aria-label="Selecione o modelo" id="inputModelCar"
+                                name="inputModelCar" required>
+                                <option value="">Selecione o modelo</option>
+                                <option value="1">ARGO 1.0 FLEX 4P</option>
+                                <option value="2">ARGO DRIVE 1.0 FLEX 4P</option>
+                                <option value="3">CRONOS 1.3 FLEX 4P</option>
+                                <option value="4">CRONOS DRIVE 1.3 FLEX 4P</option>
+                                <option value="5">MOBI LIKE 1.0 FLEX 4P</option>
+                                <option value="6">PULSE DRIVE 1.3 MT FLEX 4P</option>
+                                <option value="7">PULSE DRIVE 1.3 TURBO FLEX 4P</option>
+                                <option value="8">PULSE AUDACE FLEX AT 4P</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-md-12 col-lg-8">
+                            <label for="inputYearCar" class="form-label">Ano</label>
+                            <select class="form-select" aria-label="Selecione o ano" id="inputYearCar"
+                                name="inputYearCar" required>
+                                <option value="">Selecione o ano</option>
+                                <option value="1">2023</option>
+                                <option value="2">2022</option>
+                                <option value="3">2021</option>
+                                <option value="4">2020</option>
+                                <option value="5">2019</option>
+                                <option value="6">2018</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-md-12 col-lg-8">
+                            <label for="inputBoardCar" class="form-label">Placa do carro</label>
+                            <input type="text" class="form-control" id="inputBoardCar" name="inputBoardCar"
+                                placeholder="AAA-0000" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-lg-8">
+                            <h5> 2) Selecione o tipo de serviço </h5>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-md-12 col-lg-8">
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="revisionService"
+                                    id="revisionService" name="revisionService">
+                                <label class="form-check-label" for="revisionService"> Revisão </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="oilChangeService"
+                                    id="oilChangeService" name="oilChangeService">
+                                <label class="form-check-label" for="oilChangeService"> Troca de óleo </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="filterAirChangeService"
+                                    id="filterAirChangeService" name="filterAirChangeService">
+                                <label class="form-check-label" for="filterAirChangeService"> Troca filtro de ar
+                                    condicionado </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="brakeChangeService"
+                                    id="brakeChangeService" name="brakeChangeService">
+                                <label class="form-check-label" for="brakeChangeService"> Troca pastilha de
+                                    freio </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="tireChangeService"
+                                    id="tireChangeService" name="tireChangeService">
+                                <label class="form-check-label" for="tireChangeService"> Troca de pneus </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" value="alignmentBalancingService"
+                                    id="alignmentBalancingService" name="alignmentBalancingService">
+                                <label class="form-check-label" for="alignmentBalancingService"> Alinhamento e
+                                    balanceamento </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-lg-8">
+                            <h5> 3) Selecione a data </h5>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-md-12 col-lg-8">
+                            <label for="inputDate" class="form-label">Data</label>
+                            <input type="date" class="form-control" id="inputDate" name="inputDate" min="2022-10-01"
+                                max="2022-12-31" required>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-md-12 col-lg-8">
+                            <label for="inputTime" class="form-label">Horário (07:30 às 18:00)</label>
+                            <input type="time" class="form-control" id="inputTime" name="inputTime" min="07:30"
+                                max="18:00" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-2">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-lg-8">
+                            <h5> 4) Suas informações </h5>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-md-12 col-lg-8">
+                            <label for="inputName" class="form-label">Nome completo</label>
+                            <input type="text" class="form-control" id="inputName" name="inputName"
+                                placeholder="Nome completo" required>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-md-12 col-lg-8">
+                            <label for="inputCPF" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="inputCPF" name="inputCPF"
+                                placeholder="000.000.000-00" required>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-md-12 col-lg-8">
+                            <label for="inputEmail" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="inputEmail" name="inputEmail"
+                                placeholder="E-mail" required>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center mb-2">
+                        <div class="col-md-12 col-lg-8">
+                            <label for="inputPhone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="inputPhone" name="inputPhone"
+                                placeholder="(99) 99999-9999" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-4 justify-content-center text-center">
+                    <div class="col-md-12 col-lg-8">
+                        <button type="submit" class="btn btn-outline-danger">Agendar!</button>
+
+                        <button type="reset" class="btn btn-outline-secondary">Redefinir</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </main>
+    <!--END Main-->
+
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
