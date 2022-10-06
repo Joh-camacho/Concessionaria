@@ -20,3 +20,21 @@
 .card-image:hover {
     color: red;
 }
+
+.form-input small {
+    visibility: hidden;
+}
+
+/* Error and Success */
+.form-input.success input, .form-input.success select {
+    border-color: #2ecc71;
+}
+
+.form-input.error input, .form-input.error select {
+    border-color: #e74c3c;
+}
+
+.form-input.error small {
+    visibility: visible;
+    color: #e74c3c;
+}
