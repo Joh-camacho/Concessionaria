@@ -1,63 +1,41 @@
-/* Validação do formulário */
+window.onload = function () {
+    const board = document.getElementById('inputBoardCar')
+    const cpf = document.getElementById('inputCPF')
+    const tel = document.getElementById('inputPhone')
 
+    board.onkeyup = function () {
+        applyMask(this, maskBoard);
+    }
+    cpf.onkeyup = function () {
+        applyMask(this, maskCPF);
+    }
+    tel.onkeyup = function () {
+        applyMask(this, maskPhone);
+    }
+
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+    
+        checkInputs();
+    });
+}
+
+/* Validação do formulário */
 const form = document.getElementById("formServices");
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    checkInputs();
-});
-
 function checkInputs() {
-    // Inputs
-    const modelCar = document.getElementById("inputModelCar");
-    const yearCar = document.getElementById("inputYearCar");
-    const licensePlateCar = document.getElementById("inputBoardCar");
+    validateInput("inputModelCar", "Selecione o modelo do carro.");
+    validateInput("inputYearCar", "Selecione o ano do carro.");
+    validateInput("inputBoardCar", "A placa do carro é obrigatório.", checkLicensePlate, "Por favor, insira uma placa de carro válida.");
+    validateInput("inputDate", "Selecione a data do serviço.");
+    validateInput("inputTime", "Selecione o horário do serviço.");
+    validateInput("inputName", "O nome é obrigatório.");
+    validateInput("inputCPF", "O CPF é obrigatório.", checkCPF, "Por favor, insira um CPF válido.");
+    validateInput("inputEmail", "O e-mail é obrigatório.", checkEmail, "Por favor, insira um e-mail válido.");
+    validateInput("inputPhone", "O telefone é obrigatório.", checkPhone, "Por favor, insira um telefone válido.");
 
     const services = document.getElementsByClassName("form-input-service");
-
-    const date = document.getElementById("inputDate");
-    const time = document.getElementById("inputTime");
-
-    const name = document.getElementById("inputName");
-    const cpf = document.getElementById("inputCPF");
-    const email = document.getElementById("inputEmail");
-    const phone = document.getElementById("inputPhone");
-
-    // Values
-    const modelCarValue = modelCar.value;
-    const yearCarValue = yearCar.value;
-    const licensePlateCarValue = licensePlateCar.value;
-
     const servicesValue = document.querySelector('input[name="service"]:checked');
-
-    const dateValue = date.value;
-    const timeValue = time.value;
-
-    const nameValue = name.value;
-    const cpfValue = cpf.value;
-    const emailValue = email.value;
-    const phoneValue = phone.value;
-
-    if (modelCarValue === "") {
-        setErrorFor(modelCar, "Selecione o modelo do carro.");
-    } else {
-        setSuccessFor(modelCar);
-    }
-
-    if (yearCarValue === "") {
-        setErrorFor(yearCar, "Selecione o ano do carro.");
-    } else {
-        setSuccessFor(yearCar);
-    }
-
-    if (licensePlateCarValue === "") {
-        setErrorFor(licensePlateCar, "A placa do carro é obrigatório.");
-    } else if (!checkLicensePlate(licensePlateCarValue)) {
-        setErrorFor(licensePlateCar, "Por favor, insira uma placa de carro válida.");
-    } else {
-        setSuccessFor(licensePlateCar);
-    }
 
     if (servicesValue === null) {
         setErrorFor(services[0], "Selecione o serviço.");
@@ -65,48 +43,10 @@ function checkInputs() {
         setSuccessFor(services[0]);
     }
 
-    if (dateValue === "") {
-        setErrorFor(date, "Selecione a data do serviço.");
-    } else {
-        setSuccessFor(date);
-    }
+    verifySuccess()
+}
 
-    if (timeValue === "") {
-        setErrorFor(time, "Selecione o horário do serviço.");
-    } else {
-        setSuccessFor(time);
-    }
-
-    if (nameValue === "") {
-        setErrorFor(name, "O nome é obrigatório.");
-    } else {
-        setSuccessFor(name);
-    }
-
-    if (cpfValue === "") {
-        setErrorFor(cpf, "O CPF é obrigatório.");
-    } else if (!checkCPF(cpfValue)) {
-        setErrorFor(cpf, "Por favor, insira um CPF válido.");
-    } else {
-        setSuccessFor(cpf);
-    }
-
-    if (emailValue === "") {
-        setErrorFor(email, "O e-mail é obrigatório.");
-    } else if (!checkEmail(emailValue)) {
-        setErrorFor(email, "Por favor, insira um e-mail válido.");
-    } else {
-        setSuccessFor(email);
-    }
-
-    if (phoneValue === "") {
-        setErrorFor(phone, "O telefone é obrigatório.");
-    } else if (!checkPhone(phoneValue)) {
-        setErrorFor(phone, "Por favor, insira um telefone válido.");
-    } else {
-        setSuccessFor(phone);
-    }
-
+function verifySuccess() {
     const formControls = form.querySelectorAll(".form-input");
 
     const formIsValid = [...formControls].every((formControl) => {
@@ -115,9 +55,22 @@ function checkInputs() {
 
     if (formIsValid) {
         alert("O formulário está 100% válido!");
-    }
 
-    console.log(formIsValid);
+        document.location.reload();
+    }
+}
+
+function validateInput(inputId, message, checker, checkerMessage) {
+    const input = document.getElementById(inputId);
+    const value = input.value
+
+    if (value === "") {
+        setErrorFor(input, message);
+    } else if (checker != null && !checker(value)) {
+        setErrorFor(input, checkerMessage);
+    } else {
+        setSuccessFor(input);
+    }
 }
 
 function setErrorFor(input, message) {
@@ -140,6 +93,7 @@ function setSuccessFor(input) {
     formInput.classList.remove("error");
 }
 
+/* Checkers */
 function checkEmail(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
@@ -219,20 +173,4 @@ function maskPhone(number) {
         .replace(/\D/g, "")
         .replace(/^(\d{2})(\d)/, "($1) $2")
         .replace(/(\d)(\d{4})$/, "$1-$2");
-}
-
-window.onload = function () {
-    const board = document.getElementById('inputBoardCar')
-    const cpf = document.getElementById('inputCPF')
-    const tel = document.getElementById('inputPhone')
-
-    board.onkeyup = function () {
-        applyMask(this, maskBoard);
-    }
-    cpf.onkeyup = function () {
-        applyMask(this, maskCPF);
-    }
-    tel.onkeyup = function () {
-        applyMask(this, maskPhone);
-    }
 }
